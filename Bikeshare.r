@@ -1,5 +1,5 @@
-setwd("C:/Data Science Fundation with R/R-Course-HTML-Notes/R-Course-HTML-Notes/R-for-Data-Science-and-Machine-Learning/Training Exercises/Machine Learning Projects/CSV files for ML Projects")
-list.files("C:/Data Science Fundation with R/R-Course-HTML-Notes/R-Course-HTML-Notes/R-for-Data-Science-and-Machine-Learning/Training Exercises/Machine Learning Projects/CSV files for ML Projects")
+setwd("...")
+list.files("...")
 df <- read.csv("bikeshare.csv", sep = ",")
 head(df, 4)
 
