@@ -17,9 +17,9 @@ library(ggthemes)
 library(dplyr)
 library(corrgram)
 library(plotly)
-Sys.setenv("plotly_username"="geospatialanalystyi")
-Sys.setenv("plotly_api_key"="kavplmotix")
-Sys.setenv("plotly_domain"="https://plotly.your-company.com")
+Sys.setenv("plotly_username"="...")
+Sys.setenv("plotly_api_key"="...")
+Sys.setenv("plotly_domain"="...")
 
 #check out the correlation between variables
 #Bike.Num <- sapply(df, is.numeric)
