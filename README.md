@@ -63,7 +63,7 @@ I ran the linear regression between bike demands and the variables above and had
 ![linear regression](https://cloud.githubusercontent.com/assets/14057932/17854786/a034befa-683a-11e6-9b18-6d49bd1924a4.png)At this point we could make a prediction/assumption: Today, it’s fall now, and holiday; the weather is clear, few clouds; temp is 30, but air temp is about 34; humidity is about 70%; weed seed is about 2, and it’s close to 16:00 pm now. So we could predict how many bikes are needed for the particular hour, day and weather.
 
 The answer is 781 bikes.
-
+![xgboost](https://cloud.githubusercontent.com/assets/14057932/25570259/22018c8e-2dd8-11e7-8130-880f638be2b8.png)
 My R codes could be found here: http://rpubs.com/Geoyi/BikeshareDC_LM.
 
 到这个点上，我们就可以大概预测：今天是秋天里气候凉爽，少云；气温在30度左右，湿度为70%，风速不大大概在2左右，然后现在快要下午四点了，而且还是不用工作的假期。那么从上么的公式我们就可以大概预测，今天在周围活动的自行车大概是781辆。
