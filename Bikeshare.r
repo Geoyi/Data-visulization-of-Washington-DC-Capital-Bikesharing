@@ -8,7 +8,6 @@ df <- rbind(bike, test)
 
 head(df, 4)
 
-In [1]:
 library(dplyr, quietly = T, warn.conflicts = F)
 library(data.table, quietly = T, warn.conflicts = F)
 library(fasttime, quietly = T, warn.conflicts = F)
@@ -23,7 +22,7 @@ Sys.setenv("plotly_api_key"="...")
 Sys.setenv("plotly_domain"="...")
 
 
-bike$count = log1p(bike$count)
+bike$count <- log1p(bike$count)
 
 
 bike %>% 
@@ -40,11 +39,11 @@ test %>%
            year = year(datetime),
            wday = wday(datetime)) -> test
 
-X_train = bike %>% select(-count, - datetime, -registered, - casual) %>% as.matrix()
-y_train = bike$count
+X_train  <- bike %>% select(-count, - datetime, -registered, - casual) %>% as.matrix()
+y_train  <- bike$count
 
-dtrain = xgb.DMatrix(X_train, label = y_train)
-model = xgb.train(data = dtrain, nround = 150, max_depth = 5, eta = 0.1, subsample = 0.9)
+dtrain  <- xgb.DMatrix(X_train, label = y_train)
+model  <- xgb.train(data = dtrain, nround = 150, max_depth = 5, eta = 0.1, subsample = 0.9)
 
 xgb.importance(feature_names = colnames(X_train), model) %>% xgb.plot.importance()
 
